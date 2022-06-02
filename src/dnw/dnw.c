@@ -12,9 +12,12 @@
 
 const char* dev = "/dev/secbulk0";
 #define BLOCK_SIZE	(1*1024*1024)
-#define EZ6410_RAM_BASE 0x40008000
+
+//#define 	EZ6410_RAM_BASE 0x40008000
+#define 		TQ2440_RAM_BASE 0x30000000
 //download address
-#define RAM_BASE        EZ6410_RAM_BASE
+//#define RAM_BASE        	EZ6410_RAM_BASE
+#define RAM_BASE			TQ2440_RAM_BASE
 
 struct download_buffer 
 {
@@ -178,7 +181,7 @@ int main(int argc, char* argv[])
                 case '?': case 'h': default:
         usage:
                         printf("Usage: dwn [-a load_addr] <filename>\n");
-                        printf("Default load address: 0x40008000\n");
+                        printf("Default load address: %04x\n",(unsigned int)TQ2440_RAM_BASE);
                         return 1;
 	}
 	if (optind < argc)

@@ -15,15 +15,21 @@
 #define FS2410_VENDOR_ID        0x5345
 #define FS2410_PRODUCT_ID       0x1234
 #define FS2410_RAM_BASE         0x30200000
+//TQ2440
+#define TQ2440_VENDOR_ID        0x5345
+#define TQ2440_PRODUCT_ID       0x1234
+#define TQ2440_RAM_BASE         0x30000000
 //EZ6410
 #define EZ6410_VENDOR_ID        0x04e8
 #define EZ6410_PRODUCT_ID       0x1234
 #define EZ6410_RAM_BASE         0x40008000
 //download address
-#define RAM_BASE        EZ6410_RAM_BASE
-#define VENDOR_ID       EZ6410_VENDOR_ID
-#define PRODUCT_ID      EZ6410_PRODUCT_ID
-
+// #define RAM_BASE        EZ6410_RAM_BASE
+// #define VENDOR_ID       EZ6410_VENDOR_ID
+// #define PRODUCT_ID      EZ6410_PRODUCT_ID
+#define RAM_BASE        TQ2440_RAM_BASE
+#define VENDOR_ID       TQ2440_VENDOR_ID
+#define PRODUCT_ID      TQ2440_PRODUCT_ID
 struct usb_dev_handle * open_port() 
 {
 	struct usb_bus *busses, *bus;
