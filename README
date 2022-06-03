@@ -40,6 +40,7 @@
         dnw下载功能如一体，用pygtk或qt来做界面，如果谁有兴趣，可以与我联系：
 	hechaoyuyu@gmail.com 。
 
+4、对于TQ2440,dnw2未测试，使用dnw即可，配合minicom。
 
 以下是针对OK6410开发板的使用流程：
 1. build and install
