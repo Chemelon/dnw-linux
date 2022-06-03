@@ -1,5 +1,5 @@
 obj-m := secbulk.o
-secbulk-m := secbulk.o
+# secbulk-m := secbulk.o
 
 BASEDIR := /lib/modules/$(shell uname -r)
 KERNELDIR ?= $(BASEDIR)/build
