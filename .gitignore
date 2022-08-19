@@ -1,0 +1,13 @@
+src/dnw/dnw
+src/dnw/dnw2
+src/driver/.cache.mk
+src/driver/.secbulk.ko.cmd
+src/driver/.secbulk.mod.o.cmd
+src/driver/.secbulk.o.cmd
+src/driver/Module.symvers
+src/driver/modules.order
+src/driver/secbulk.ko
+src/driver/secbulk.mod.c
+src/driver/secbulk.mod.o
+src/driver/secbulk.o
+src/driver/.tmp_versions/secbulk.mod
